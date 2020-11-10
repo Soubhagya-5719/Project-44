@@ -48,7 +48,7 @@ namespace Photon.Pun.Demo.PunBasics
 	        }
 			// Enable the animator if isMine
 			cameraRig.SetActive(true);
-			animator.enabled = true;
+			// animator.enabled = true;
 
 			// failSafe is missing Animator component on GameObject
 	        if (!animator)

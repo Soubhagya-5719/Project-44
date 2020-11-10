@@ -40,6 +40,7 @@ namespace Photon.Pun.Demo.PunBasics
         [SerializeField]
         private GameObject playerPrefab;
 
+
         #endregion
 
         #region MonoBehaviour CallBacks
@@ -70,7 +71,12 @@ namespace Photon.Pun.Demo.PunBasics
 				    Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
 
 					// we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-					PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
+					if(PhotonNetwork.CurrentRoom.PlayerCount == 1) {
+						PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(-2f,5f,20f), Quaternion.Euler(0,180,0), 0);
+					}
+					else if(PhotonNetwork.CurrentRoom.PlayerCount == 2) {
+						PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
+					}
 				}else{
 
 					Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);
