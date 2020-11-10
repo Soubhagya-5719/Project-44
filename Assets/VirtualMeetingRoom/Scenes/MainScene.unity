@@ -1389,6 +1389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 270507805}
+  - component: {fileID: 270507806}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1410,6 +1411,18 @@ Transform:
   m_Father: {fileID: 1278579952}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &270507806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270507804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bdc848529ab07f1a7e980a2645423c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &290766802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3941,6 +3954,7 @@ GameObject:
   - component: {fileID: 683651246}
   - component: {fileID: 683651245}
   - component: {fileID: 683651247}
+  - component: {fileID: 683651248}
   m_Layer: 0
   m_Name: NetworkVoiceManager
   m_TagString: Untagged
@@ -4049,7 +4063,7 @@ MonoBehaviour:
     Protocol: 0
     EnableProtocolFallback: 1
     AuthMode: 0
-    EnableLobbyStatistics: 0
+    EnableLobbyStatistics: 1
     NetworkLogging: 1
   ShowSettings: 1
   MinimalTimeScaleToDispatchInFixedUpdate: -1
@@ -4071,6 +4085,19 @@ MonoBehaviour:
   autoTransmit: 1
   publishUserId: 0
   RoomName: 
+--- !u!114 &683651248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683651243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4925b0a6af5f07789f0c1f2110e2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  remoteVoiceParent: {fileID: 0}
 --- !u!4 &689426067 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4467644070916782, guid: b4b81f7020745844a8d7be9356d1d6fb,
