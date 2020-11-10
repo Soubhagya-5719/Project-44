@@ -96,8 +96,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public void CreatePlayer()
     {
-        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Idle variant"), Vector3.zero, Quaternion.identity, 0);
-        // PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CustomHandLeft"), Vector3.zero, Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Camera"), Vector3.zero, Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "mixamorig_Neck"), Vector3.zero, Quaternion.identity, 0);
         // PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "CustomHandRight"), Vector3.zero, Quaternion.identity, 0);
     }
     #endregion
