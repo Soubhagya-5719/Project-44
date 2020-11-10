@@ -66,19 +66,20 @@ namespace Photon.Pun.Demo.PunBasics
         /// </summary>
         public void Start()
         {
-            CameraWork _cameraWork = gameObject.GetComponent<CameraWork>();
+            //Todo:: This is the space to add movement script and keep it on or off based on player mine
+            // CameraWork _cameraWork = gameObject.GetComponent<CameraWork>();
 
-            if (_cameraWork != null)
+            // if (_cameraWork != null)
+            // {
+            if (photonView.IsMine)
             {
-                if (photonView.IsMine)
-                {
-                    _cameraWork.OnStartFollowing();
-                }
+                // _cameraWork.OnStartFollowing();
             }
-            else
-            {
-                Debug.LogError("<Color=Red><b>Missing</b></Color> CameraWork Component on player Prefab.", this);
-            }
+            // }
+            // else
+            // {
+            //     Debug.LogError("<Color=Red><b>Missing</b></Color> CameraWork Component on player Prefab.", this);
+            // }
 
             // Create the UI
             if (this.playerUiPrefab != null)
