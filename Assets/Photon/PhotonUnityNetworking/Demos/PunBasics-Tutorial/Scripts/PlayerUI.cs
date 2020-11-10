@@ -95,13 +95,13 @@ namespace Photon.Pun.Demo.PunBasics
 			
 			// #Critical
 			// Follow the Target GameObject on screen.
-			// if (targetTransform!=null)
-			// {
-			// 	targetPosition = targetTransform.position;
-			// 	targetPosition.y += characterControllerHeight;
+			if (targetTransform!=null)
+			{
+				targetPosition = targetTransform.position;
+				targetPosition.y += characterControllerHeight;
 				
-			// 	this.transform.position = Camera.main.WorldToScreenPoint (targetPosition) + screenOffset;
-			// }
+				this.transform.position = Camera.main.WorldToScreenPoint (targetPosition) + screenOffset;
+			}
 
 		}
 

@@ -12,6 +12,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 using Photon.Realtime;
+#if PLATFORM_ANDROID
+using UnityEngine.Android;
+#endif
+
 
 namespace Photon.Pun.Demo.PunBasics
 {
@@ -73,7 +77,12 @@ namespace Photon.Pun.Demo.PunBasics
 			// #Critical
 			// this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
 			PhotonNetwork.AutomaticallySyncScene = true;
-
+			#if PLATFORM_ANDROID
+			if (!Permission.HasUserAuthorizedPermission(Permission.Microphone))
+			{
+				Permission.RequestUserPermission(Permission.Microphone);
+			}
+        	#endif
 		}
 
 		#endregion
