@@ -1,0 +1,1385 @@
+==========================================
+SLURM_JOB_ID = 235763
+SLURM_NODELIST = gnode26
+SLURM_JOB_GPUS = 0,3
+==========================================
+-- The C compiler identification is GNU 5.5.0
+-- The CXX compiler identification is GNU 5.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- GCC detected, adding compile flags
+-- GCC detected, adding compile flags
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda-10.2 (found version "10.2") 
+-- Building with CUDA.
+-- CUDA detected: 10.2
+-- Added CUDA NVCC flags for: sm_61
+-- Found cuDNN: ver. 7.6.5 found (include: /usr/local/apps/cuDNN/7.6.5-cuda-10.2/include, library: /usr/local/apps/cuDNN/7.6.5-cuda-10.2/lib64/libcudnn.so)
+-- Found GFlags: /usr/include  
+-- Found gflags  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libgflags.so)
+-- Found Glog: /usr/include  
+-- Found glog    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libglog.so)
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so  
+-- Caffe will be downloaded from source now. NOTE: This process might take several minutes depending
+        on your internet connection.
+-- Caffe has already been downloaded.
+fatal: Not a git repository: ../../.git/modules/3rdparty/caffe
+-- Caffe will be built from source now.
+-- Download the models.
+-- Downloading BODY_25 model...
+-- Model already exists.
+-- Not downloading body (COCO) model
+-- Not downloading body (MPI) model
+-- Downloading face model...
+-- Model already exists.
+-- Downloading hand model...
+-- Model already exists.
+-- Models Downloaded.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/teja.dhondu/octopus/openpose/build
+Scanning dependencies of target openpose_lib
+[ 12%] Creating directories for 'openpose_lib'
+[ 25%] No download step for 'openpose_lib'
+[ 50%] No patch step for 'openpose_lib'
+[ 50%] No update step for 'openpose_lib'
+[ 62%] Performing configure step for 'openpose_lib'
+-- The C compiler identification is GNU 5.5.0
+-- The CXX compiler identification is GNU 5.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+--   filesystem
+--   chrono
+--   date_time
+--   atomic
+-- Found GFlags: /usr/include  
+-- Found gflags  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libgflags.so)
+-- Found Glog: /usr/include  
+-- Found glog    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libglog.so)
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so  
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+-- Found HDF5: /usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so (found version "1.8.16") 
+-- CUDA detected: 10.2
+-- Added CUDA NVCC flags for: sm_61
+-- Found Atlas: /usr/include  
+-- Found Atlas (include: /usr/include library: /usr/lib/libatlas.so lapack: /usr/lib/liblapack.so
+-- Python interface is disabled or not all required dependencies found. Building without it...
+-- Found Git: /usr/bin/git (found version "2.7.4") 
+-- 
+-- ******************* Caffe Configuration Summary *******************
+-- General:
+--   Version           :   1.0.0
+--   Git               :   unknown
+--   System            :   Linux
+--   C++ compiler      :   /usr/bin/c++
+--   Release CXX flags :   -O3 -DNDEBUG -fPIC -Wall -std=c++11 -Wno-sign-compare -Wno-uninitialized
+--   Debug CXX flags   :   -g -fPIC -Wall -std=c++11 -Wno-sign-compare -Wno-uninitialized
+--   Build type        :   Release
+-- 
+--   BUILD_SHARED_LIBS :   ON
+--   BUILD_python      :   OFF
+--   BUILD_matlab      :   OFF
+--   BUILD_docs        :   OFF
+--   CPU_ONLY          :   OFF
+--   USE_OPENCV        :   OFF
+--   USE_LEVELDB       :   OFF
+--   USE_LMDB          :   OFF
+--   USE_NCCL          :   OFF
+--   ALLOW_LMDB_NOLOCK :   OFF
+--   USE_HDF5          :   ON
+-- 
+-- Dependencies:
+--   BLAS              :   Yes (Atlas)
+--   Boost             :   Yes (ver. 1.58)
+--   glog              :   Yes
+--   gflags            :   Yes
+--   protobuf          :   Yes (ver. 2.6.1)
+--   CUDA              :   Yes (ver. 10.2)
+-- 
+-- NVIDIA CUDA:
+--   Target GPU(s)     :   Auto
+--   GPU arch(s)       :   sm_61
+--   cuDNN             :   Not found
+-- 
+-- Install:
+--   Install path      :   /home/teja.dhondu/octopus/openpose/build/caffe
+-- 
+-- Configuring done
+CMake Warning (dev) in src/caffe/CMakeLists.txt:
+  Policy CMP0022 is not set: INTERFACE_LINK_LIBRARIES defines the link
+  interface.  Run "cmake --help-policy CMP0022" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Target "caffe" has an INTERFACE_LINK_LIBRARIES property which differs from
+  its LINK_INTERFACE_LIBRARIES properties.
+
+  INTERFACE_LINK_LIBRARIES:
+
+    caffeproto;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libglog.so;/usr/lib/x86_64-linux-gnu/libgflags.so;$<$<NOT:$<CONFIG:DEBUG>>:/usr/lib/x86_64-linux-gnu/libprotobuf.so>;$<$<CONFIG:DEBUG>:/usr/lib/x86_64-linux-gnu/libprotobuf.so>;-lpthread;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/local/cuda-10.2/lib64/libcudart.so;/usr/local/cuda-10.2/lib64/libcurand.so;/usr/lib/x86_64-linux-gnu/libcublas.so;/usr/lib/liblapack.so;/usr/lib/libcblas.so;/usr/lib/libatlas.so
+
+  LINK_INTERFACE_LIBRARIES:
+
+    caffeproto;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libglog.so;/usr/lib/x86_64-linux-gnu/libgflags.so;/usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/local/cuda-10.2/lib64/libcudart.so;/usr/local/cuda-10.2/lib64/libcurand.so;/usr/lib/x86_64-linux-gnu/libcublas.so;/usr/lib/liblapack.so;/usr/lib/libcblas.so;/usr/lib/libatlas.so
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CUDA_ARCH_BIN
+
+
+-- Build files have been written to: /home/teja.dhondu/octopus/openpose/build/caffe/src/openpose_lib-build
+[ 75%] Performing build step for 'openpose_lib'
+[  1%] Running C++/Python protocol buffer compiler on /home/teja.dhondu/octopus/openpose/3rdparty/caffe/src/caffe/proto/caffe.proto
+Scanning dependencies of target caffeproto
+[  1%] Building CXX object src/caffe/CMakeFiles/caffeproto.dir/__/__/include/caffe/proto/caffe.pb.cc.o
+[  1%] Linking CXX static library ../../lib/libcaffeproto.a
+[  1%] Built target caffeproto
+[  1%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_cudnn_conv_layer.cu.o
+[  1%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/util/cuda_compile_generated_math_functions.cu.o
+[  1%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/util/cuda_compile_generated_im2col.cu.o
+[  2%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/solvers/cuda_compile_generated_nesterov_solver.cu.o
+[  2%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/solvers/cuda_compile_generated_adam_solver.cu.o
+[  4%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/solvers/cuda_compile_generated_adadelta_solver.cu.o
+[  4%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/solvers/cuda_compile_generated_adagrad_solver.cu.o
+[  5%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/solvers/cuda_compile_generated_sgd_solver.cu.o
+[  6%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/solvers/cuda_compile_generated_rmsprop_solver.cu.o
+[  6%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_recurrent_layer.cu.o
+[  6%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_lrn_layer.cu.o
+[  6%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_cudnn_deconv_layer.cu.o
+[  6%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_swish_layer.cu.o
+[  6%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_cudnn_lcn_layer.cu.o
+[  8%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_dropout_layer.cu.o
+[  8%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_absval_layer.cu.o
+[  8%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_mvn_layer.cu.o
+[  8%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_cudnn_relu_layer.cu.o
+[  9%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_split_layer.cu.o
+[ 10%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_euclidean_loss_layer.cu.o
+In file included from /home/teja.dhondu/octopus/openpose/3rdparty/caffe/src/caffe/util/math_functions.cu:1:0:
+/usr/local/cuda-10.2/include/math_functions.h:54:2: warning: #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead." [-Wcpp]
+ #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead."
+  ^
+In file included from /home/teja.dhondu/octopus/openpose/3rdparty/caffe/src/caffe/util/math_functions.cu:1:0:
+/usr/local/cuda-10.2/include/math_functions.h:54:2: warning: #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead." [-Wcpp]
+ #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead."
+  ^
+[ 10%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_concat_layer.cu.o
+[ 10%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_crop_layer.cu.o
+[ 10%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_sigmoid_layer.cu.o
+[ 12%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_elu_layer.cu.o
+In file included from /home/teja.dhondu/octopus/openpose/3rdparty/caffe/src/caffe/util/math_functions.cu:1:0:
+/usr/local/cuda-10.2/include/math_functions.h:54:2: warning: #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead." [-Wcpp]
+ #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead."
+  ^
+In file included from /home/teja.dhondu/octopus/openpose/3rdparty/caffe/src/caffe/util/math_functions.cu:1:0:
+/usr/local/cuda-10.2/include/math_functions.h:54:2: warning: #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead." [-Wcpp]
+ #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead."
+  ^
+[ 13%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_batch_reindex_layer.cu.o
+[ 13%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_prelu_layer.cu.o
+[ 13%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_relu_layer.cu.o
+[ 15%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_hdf5_output_layer.cu.o
+[ 15%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_deconv_layer.cu.o
+[ 15%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_bnll_layer.cu.o
+[ 16%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_eltwise_layer.cu.o
+[ 16%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_embed_layer.cu.o
+[ 17%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_cudnn_softmax_layer.cu.o
+[ 17%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_threshold_layer.cu.o
+[ 17%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_batch_norm_layer.cu.o
+[ 19%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_cudnn_pooling_layer.cu.o
+[ 19%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_bias_layer.cu.o
+[ 19%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_lstm_unit_layer.cu.o
+[ 20%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_conv_layer.cu.o
+[ 20%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_pooling_layer.cu.o
+[ 21%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_slice_layer.cu.o
+[ 21%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_clip_layer.cu.o
+[ 21%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_base_data_layer.cu.o
+[ 23%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_filter_layer.cu.o
+[ 23%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_cudnn_lrn_layer.cu.o
+[ 23%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_log_layer.cu.o
+[ 24%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_im2col_layer.cu.o
+[ 24%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_accuracy_layer.cu.o
+[ 26%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_tile_layer.cu.o
+[ 26%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_cudnn_sigmoid_layer.cu.o
+[ 26%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_hdf5_data_layer.cu.o
+[ 27%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_tanh_layer.cu.o
+[ 27%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_contrastive_loss_layer.cu.o
+[ 28%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_power_layer.cu.o
+[ 28%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_sigmoid_cross_entropy_loss_layer.cu.o
+[ 28%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_inner_product_layer.cu.o
+[ 30%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_silence_layer.cu.o
+[ 30%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_exp_layer.cu.o
+[ 30%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_softmax_layer.cu.o
+[ 31%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_reduction_layer.cu.o
+[ 31%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_cudnn_tanh_layer.cu.o
+[ 32%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_scale_layer.cu.o
+[ 32%] Building NVCC (Device) object src/caffe/CMakeFiles/cuda_compile.dir/layers/cuda_compile_generated_softmax_loss_layer.cu.o
+Scanning dependencies of target caffe
+[ 34%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/cudnn.cpp.o
+[ 35%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/hdf5.cpp.o
+[ 35%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/im2col.cpp.o
+[ 35%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/math_functions.cpp.o
+[ 35%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/upgrade_proto.cpp.o
+[ 36%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/db.cpp.o
+[ 36%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/io.cpp.o
+[ 36%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/db_leveldb.cpp.o
+[ 39%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/blocking_queue.cpp.o
+[ 39%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/db_lmdb.cpp.o
+[ 39%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/signal_handler.cpp.o
+[ 39%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/insert_splits.cpp.o
+[ 39%] Building CXX object src/caffe/CMakeFiles/caffe.dir/util/benchmark.cpp.o
+[ 41%] Building CXX object src/caffe/CMakeFiles/caffe.dir/parallel.cpp.o
+[ 41%] Building CXX object src/caffe/CMakeFiles/caffe.dir/syncedmem.cpp.o
+[ 41%] Building CXX object src/caffe/CMakeFiles/caffe.dir/solvers/adadelta_solver.cpp.o
+[ 41%] Building CXX object src/caffe/CMakeFiles/caffe.dir/solvers/adagrad_solver.cpp.o
+[ 43%] Building CXX object src/caffe/CMakeFiles/caffe.dir/solvers/sgd_solver.cpp.o
+[ 43%] Building CXX object src/caffe/CMakeFiles/caffe.dir/solvers/adam_solver.cpp.o
+[ 43%] Building CXX object src/caffe/CMakeFiles/caffe.dir/solvers/nesterov_solver.cpp.o
+[ 43%] Building CXX object src/caffe/CMakeFiles/caffe.dir/solvers/rmsprop_solver.cpp.o
+[ 45%] Building CXX object src/caffe/CMakeFiles/caffe.dir/blob.cpp.o
+[ 45%] Building CXX object src/caffe/CMakeFiles/caffe.dir/internal_thread.cpp.o
+[ 45%] Building CXX object src/caffe/CMakeFiles/caffe.dir/solver.cpp.o
+[ 46%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layer_factory.cpp.o
+[ 46%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layer.cpp.o
+[ 46%] Building CXX object src/caffe/CMakeFiles/caffe.dir/common.cpp.o
+[ 47%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/dummy_data_layer.cpp.o
+[ 47%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/conv_layer.cpp.o
+[ 49%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/split_layer.cpp.o
+[ 49%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/filter_layer.cpp.o
+[ 49%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/threshold_layer.cpp.o
+[ 50%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/hdf5_data_layer.cpp.o
+[ 50%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/window_data_layer.cpp.o
+[ 50%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/eltwise_layer.cpp.o
+[ 52%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/crop_layer.cpp.o
+[ 52%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/euclidean_loss_layer.cpp.o
+[ 53%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/rnn_layer.cpp.o
+[ 53%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/input_layer.cpp.o
+[ 53%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_deconv_layer.cpp.o
+[ 54%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/relu_layer.cpp.o
+[ 54%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/hdf5_output_layer.cpp.o
+[ 56%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/flatten_layer.cpp.o
+[ 56%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/silence_layer.cpp.o
+[ 56%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/loss_layer.cpp.o
+[ 57%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/base_data_layer.cpp.o
+[ 57%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/pooling_layer.cpp.o
+[ 57%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/lstm_unit_layer.cpp.o
+[ 58%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_lrn_layer.cpp.o
+[ 58%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/batch_norm_layer.cpp.o
+[ 60%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/elu_layer.cpp.o
+[ 60%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/sigmoid_layer.cpp.o
+[ 60%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/batch_reindex_layer.cpp.o
+[ 61%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/power_layer.cpp.o
+[ 61%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_tanh_layer.cpp.o
+[ 61%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/bnll_layer.cpp.o
+[ 63%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/sigmoid_cross_entropy_loss_layer.cpp.o
+[ 63%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/hinge_loss_layer.cpp.o
+[ 64%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_conv_layer.cpp.o
+[ 64%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/im2col_layer.cpp.o
+[ 64%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/tanh_layer.cpp.o
+[ 65%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/neuron_layer.cpp.o
+[ 65%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/contrastive_loss_layer.cpp.o
+[ 65%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/bias_layer.cpp.o
+[ 67%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_lcn_layer.cpp.o
+[ 67%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/recurrent_layer.cpp.o
+[ 68%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/exp_layer.cpp.o
+[ 68%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/multinomial_logistic_loss_layer.cpp.o
+[ 68%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/slice_layer.cpp.o
+[ 69%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/clip_layer.cpp.o
+[ 69%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/tile_layer.cpp.o
+[ 69%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_relu_layer.cpp.o
+[ 71%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/infogain_loss_layer.cpp.o
+[ 71%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/concat_layer.cpp.o
+[ 72%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/scale_layer.cpp.o
+[ 72%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/embed_layer.cpp.o
+[ 72%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/mvn_layer.cpp.o
+[ 73%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/deconv_layer.cpp.o
+[ 73%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/data_layer.cpp.o
+[ 73%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/inner_product_layer.cpp.o
+[ 75%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/accuracy_layer.cpp.o
+[ 75%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/argmax_layer.cpp.o
+[ 76%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_sigmoid_layer.cpp.o
+[ 76%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/lrn_layer.cpp.o
+[ 76%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/softmax_loss_layer.cpp.o
+[ 78%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/lstm_layer.cpp.o
+[ 78%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/reshape_layer.cpp.o
+[ 78%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_pooling_layer.cpp.o
+[ 79%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/prelu_layer.cpp.o
+[ 79%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/reduction_layer.cpp.o
+[ 80%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/dropout_layer.cpp.o
+[ 80%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/parameter_layer.cpp.o
+[ 80%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/swish_layer.cpp.o
+[ 82%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/absval_layer.cpp.o
+[ 82%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/spp_layer.cpp.o
+[ 83%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/image_data_layer.cpp.o
+[ 83%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/cudnn_softmax_layer.cpp.o
+[ 83%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/base_conv_layer.cpp.o
+[ 84%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/log_layer.cpp.o
+[ 84%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/memory_data_layer.cpp.o
+[ 84%] Building CXX object src/caffe/CMakeFiles/caffe.dir/layers/softmax_layer.cpp.o
+[ 86%] Building CXX object src/caffe/CMakeFiles/caffe.dir/data_transformer.cpp.o
+[ 86%] Building CXX object src/caffe/CMakeFiles/caffe.dir/net.cpp.o
+[ 87%] Linking CXX shared library ../../lib/libcaffe.so
+[ 87%] Built target caffe
+Scanning dependencies of target extract_features
+Scanning dependencies of target compute_image_mean
+Scanning dependencies of target convert_imageset
+Scanning dependencies of target caffe.bin
+Scanning dependencies of target upgrade_net_proto_binary
+Scanning dependencies of target upgrade_solver_proto_text
+Scanning dependencies of target convert_cifar_data
+Scanning dependencies of target convert_mnist_siamese_data
+Scanning dependencies of target convert_mnist_data
+Scanning dependencies of target upgrade_net_proto_text
+[ 87%] Building CXX object tools/CMakeFiles/caffe.bin.dir/caffe.cpp.o
+[ 89%] Building CXX object tools/CMakeFiles/compute_image_mean.dir/compute_image_mean.cpp.o
+Scanning dependencies of target classification
+[ 89%] Building CXX object tools/CMakeFiles/convert_imageset.dir/convert_imageset.cpp.o
+[ 89%] Building CXX object tools/CMakeFiles/extract_features.dir/extract_features.cpp.o
+[ 90%] Building CXX object tools/CMakeFiles/upgrade_net_proto_binary.dir/upgrade_net_proto_binary.cpp.o
+[ 90%] Building CXX object examples/CMakeFiles/convert_cifar_data.dir/cifar10/convert_cifar_data.cpp.o
+[ 90%] Building CXX object tools/CMakeFiles/upgrade_solver_proto_text.dir/upgrade_solver_proto_text.cpp.o
+[ 93%] Building CXX object tools/CMakeFiles/upgrade_net_proto_text.dir/upgrade_net_proto_text.cpp.o
+[ 93%] Building CXX object examples/CMakeFiles/convert_mnist_siamese_data.dir/siamese/convert_mnist_siamese_data.cpp.o
+[ 93%] Building CXX object examples/CMakeFiles/convert_mnist_data.dir/mnist/convert_mnist_data.cpp.o
+[ 94%] Building CXX object examples/CMakeFiles/classification.dir/cpp_classification/classification.cpp.o
+[ 94%] Linking CXX executable siamese/convert_mnist_siamese_data
+[ 94%] Linking CXX executable mnist/convert_mnist_data
+[ 94%] Linking CXX executable compute_image_mean
+[ 94%] Built target convert_mnist_siamese_data
+[ 94%] Linking CXX executable convert_imageset
+[ 94%] Built target convert_mnist_data
+[ 94%] Built target compute_image_mean
+[ 94%] Built target convert_imageset
+[ 95%] Linking CXX executable cifar10/convert_cifar_data
+[ 95%] Built target convert_cifar_data
+[ 97%] Linking CXX executable upgrade_net_proto_text
+[ 98%] Linking CXX executable upgrade_solver_proto_text
+[ 98%] Built target upgrade_net_proto_text
+[ 98%] Built target upgrade_solver_proto_text
+[ 98%] Linking CXX executable cpp_classification/classification
+[ 98%] Built target classification
+[ 98%] Linking CXX executable upgrade_net_proto_binary
+[ 98%] Built target upgrade_net_proto_binary
+[100%] Linking CXX executable extract_features
+[100%] Built target extract_features
+[100%] Linking CXX executable caffe
+[100%] Built target caffe.bin
+[ 87%] Performing install step for 'openpose_lib'
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+--   filesystem
+--   chrono
+--   date_time
+--   atomic
+-- Found gflags  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libgflags.so)
+-- Found glog    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libglog.so)
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+-- CUDA detected: 10.2
+-- Added CUDA NVCC flags for: sm_61
+-- Found Atlas (include: /usr/include library: /usr/lib/libatlas.so lapack: /usr/lib/liblapack.so
+-- Python interface is disabled or not all required dependencies found. Building without it...
+-- 
+-- ******************* Caffe Configuration Summary *******************
+-- General:
+--   Version           :   1.0.0
+--   Git               :   unknown
+--   System            :   Linux
+--   C++ compiler      :   /usr/bin/c++
+--   Release CXX flags :   -O3 -DNDEBUG -fPIC -Wall -std=c++11 -Wno-sign-compare -Wno-uninitialized
+--   Debug CXX flags   :   -g -fPIC -Wall -std=c++11 -Wno-sign-compare -Wno-uninitialized
+--   Build type        :   Release
+-- 
+--   BUILD_SHARED_LIBS :   ON
+--   BUILD_python      :   OFF
+--   BUILD_matlab      :   OFF
+--   BUILD_docs        :   OFF
+--   CPU_ONLY          :   OFF
+--   USE_OPENCV        :   OFF
+--   USE_LEVELDB       :   OFF
+--   USE_LMDB          :   OFF
+--   USE_NCCL          :   OFF
+--   ALLOW_LMDB_NOLOCK :   OFF
+--   USE_HDF5          :   ON
+-- 
+-- Dependencies:
+--   BLAS              :   Yes (Atlas)
+--   Boost             :   Yes (ver. 1.58)
+--   glog              :   Yes
+--   gflags            :   Yes
+--   protobuf          :   Yes (ver. 2.6.1)
+--   CUDA              :   Yes (ver. 10.2)
+-- 
+-- NVIDIA CUDA:
+--   Target GPU(s)     :   Auto
+--   GPU arch(s)       :   sm_61
+--   cuDNN             :   Not found
+-- 
+-- Install:
+--   Install path      :   /home/teja.dhondu/octopus/openpose/build/caffe
+-- 
+-- Configuring done
+CMake Warning (dev) in src/caffe/CMakeLists.txt:
+  Policy CMP0022 is not set: INTERFACE_LINK_LIBRARIES defines the link
+  interface.  Run "cmake --help-policy CMP0022" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Target "caffe" has an INTERFACE_LINK_LIBRARIES property which differs from
+  its LINK_INTERFACE_LIBRARIES properties.
+
+  INTERFACE_LINK_LIBRARIES:
+
+    caffeproto;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libglog.so;/usr/lib/x86_64-linux-gnu/libgflags.so;$<$<NOT:$<CONFIG:DEBUG>>:/usr/lib/x86_64-linux-gnu/libprotobuf.so>;$<$<CONFIG:DEBUG>:/usr/lib/x86_64-linux-gnu/libprotobuf.so>;-lpthread;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/local/cuda-10.2/lib64/libcudart.so;/usr/local/cuda-10.2/lib64/libcurand.so;/usr/lib/x86_64-linux-gnu/libcublas.so;/usr/lib/liblapack.so;/usr/lib/libcblas.so;/usr/lib/libatlas.so
+
+  LINK_INTERFACE_LIBRARIES:
+
+    caffeproto;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libglog.so;/usr/lib/x86_64-linux-gnu/libgflags.so;/usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/local/cuda-10.2/lib64/libcudart.so;/usr/local/cuda-10.2/lib64/libcurand.so;/usr/lib/x86_64-linux-gnu/libcublas.so;/usr/lib/liblapack.so;/usr/lib/libcblas.so;/usr/lib/libatlas.so
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+-- Build files have been written to: /home/teja.dhondu/octopus/openpose/build/caffe/src/openpose_lib-build
+[  2%] Built target caffeproto
+Scanning dependencies of target caffe
+[  4%] Linking CXX shared library ../../lib/libcaffe.so
+[ 89%] Built target caffe
+[ 90%] Linking CXX executable extract_features
+[ 90%] Linking CXX executable compute_image_mean
+[ 91%] Linking CXX executable mnist/convert_mnist_data
+[ 91%] Linking CXX executable cpp_classification/classification
+[ 91%] Linking CXX executable upgrade_net_proto_binary
+[ 93%] Linking CXX executable cifar10/convert_cifar_data
+[ 93%] Linking CXX executable caffe
+[ 93%] Linking CXX executable convert_imageset
+[ 94%] Linking CXX executable siamese/convert_mnist_siamese_data
+[ 95%] Linking CXX executable upgrade_net_proto_text
+[ 95%] Linking CXX executable upgrade_solver_proto_text
+[ 97%] Built target compute_image_mean
+[ 97%] Built target extract_features
+[ 97%] Built target convert_imageset
+[ 97%] Built target classification
+[ 97%] Built target convert_mnist_data
+[ 98%] Built target convert_mnist_siamese_data
+[ 98%] Built target convert_cifar_data
+[ 98%] Built target upgrade_solver_proto_text
+[ 98%] Built target caffe.bin
+[ 98%] Built target upgrade_net_proto_text
+[100%] Built target upgrade_net_proto_binary
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/share/Caffe/CaffeConfig.cmake
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/share/Caffe/CaffeTargets.cmake
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/share/Caffe/CaffeTargets-release.cmake
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/internal_thread.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/sgd_solvers.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/device_alternate.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/io.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/db_leveldb.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/upgrade_proto.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/im2col.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/rng.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/db.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/hdf5.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/insert_splits.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/nccl.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/format.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/db_lmdb.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/signal_handler.h
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/math_functions.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/blocking_queue.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/gpu_util.cuh
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/mkl_alternate.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/cudnn.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/util/benchmark.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/solver_factory.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/net.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/parallel.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/syncedmem.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/caffe.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/blob.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/test
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/test/test_gradient_check_util.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/test/test_caffe_main.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/solver.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/filler.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/data_transformer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/common.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/input_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/deconv_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/prelu_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/base_data_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/batch_norm_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/cudnn_conv_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/concat_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/inner_product_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/euclidean_loss_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/im2col_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/pooling_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/power_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/hdf5_data_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/crop_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/data_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/softmax_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/slice_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/absval_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/tanh_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/reshape_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/base_conv_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/batch_reindex_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/hinge_loss_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/threshold_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/cudnn_softmax_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/neuron_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/argmax_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/softmax_loss_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/swish_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/log_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/cudnn_pooling_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/embed_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/tile_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/bias_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/cudnn_tanh_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/elu_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/contrastive_loss_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/multinomial_logistic_loss_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/sigmoid_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/parameter_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/clip_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/cudnn_deconv_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/split_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/cudnn_sigmoid_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/conv_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/relu_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/dropout_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/loss_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/silence_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/window_data_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/accuracy_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/cudnn_lcn_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/bnll_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/reduction_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/mvn_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/filter_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/rnn_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/scale_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/memory_data_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/image_data_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/cudnn_relu_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/cudnn_lrn_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/exp_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/spp_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/lrn_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/dummy_data_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/eltwise_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/sigmoid_cross_entropy_loss_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/lstm_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/python_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/hdf5_output_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/infogain_loss_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/flatten_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layers/recurrent_layer.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/layer_factory.hpp
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/include/caffe/proto/caffe.pb.h
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/lib/libcaffe.so.1.0.0
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/lib/libcaffe.so
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/lib/libcaffe.so.1.0.0" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/lib/libcaffeproto.a
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/python/caffe/proto/caffe_pb2.py
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/python/caffe/proto/__init__.py
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/caffe
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/caffe" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/compute_image_mean
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/compute_image_mean" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/upgrade_solver_proto_text
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/upgrade_solver_proto_text" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/convert_imageset
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/convert_imageset" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/upgrade_net_proto_binary
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/upgrade_net_proto_binary" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/upgrade_net_proto_text
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/upgrade_net_proto_text" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/extract_features
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/extract_features" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/classification
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/classification" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/convert_mnist_data
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/convert_mnist_data" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/convert_mnist_siamese_data
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/convert_mnist_siamese_data" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+-- Installing: /home/teja.dhondu/octopus/openpose/build/caffe/bin/convert_cifar_data
+-- Set runtime path of "/home/teja.dhondu/octopus/openpose/build/caffe/bin/convert_cifar_data" to "/home/teja.dhondu/octopus/openpose/build/caffe/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/cuda-10.2/lib64"
+[100%] Completed 'openpose_lib'
+Rerunning cmake after building Caffe submodule
+-- GCC detected, adding compile flags
+-- GCC detected, adding compile flags
+-- Building with CUDA.
+-- CUDA detected: 10.2
+-- Found cuDNN: ver. 7.6.5 found (include: /usr/local/apps/cuDNN/7.6.5-cuda-10.2/include, library: /usr/local/apps/cuDNN/7.6.5-cuda-10.2/lib64/libcudnn.so)
+-- Added CUDA NVCC flags for: sm_61
+-- Found cuDNN: ver. 7.6.5 found (include: /usr/local/apps/cuDNN/7.6.5-cuda-10.2/include, library: /usr/local/apps/cuDNN/7.6.5-cuda-10.2/lib64/libcudnn.so)
+-- Found gflags  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libgflags.so)
+-- Found glog    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libglog.so)
+-- Caffe will be downloaded from source now. NOTE: This process might take several minutes depending
+        on your internet connection.
+-- Caffe has already been downloaded.
+fatal: Not a git repository: ../../.git/modules/3rdparty/caffe
+-- Caffe will be built from source now.
+-- Adding Example calibration.bin
+-- Adding Example openpose.bin
+-- Adding Example 1_custom_post_processing.bin
+-- Adding Example 01_body_from_image_default.bin
+-- Adding Example 02_whole_body_from_image_default.bin
+-- Adding Example 03_keypoints_from_image.bin
+-- Adding Example 04_keypoints_from_images.bin
+-- Adding Example 05_keypoints_from_images_multi_gpu.bin
+-- Adding Example 06_face_from_image.bin
+-- Adding Example 07_hand_from_image.bin
+-- Adding Example 08_heatmaps_from_image.bin
+-- Adding Example 09_keypoints_from_heatmaps.bin
+-- Adding Example 10_asynchronous_custom_input.bin
+-- Adding Example 11_asynchronous_custom_input_multi_camera.bin
+-- Adding Example 12_asynchronous_custom_output.bin
+-- Adding Example 13_asynchronous_custom_input_output_and_datum.bin
+-- Adding Example 14_synchronous_custom_input.bin
+-- Adding Example 15_synchronous_custom_preprocessing.bin
+-- Adding Example 16_synchronous_custom_postprocessing.bin
+-- Adding Example 17_synchronous_custom_output.bin
+-- Adding Example 18_synchronous_custom_all_and_datum.bin
+-- Adding Example 1_thread_user_processing_function.bin
+-- Adding Example 2_thread_user_input_processing_output_and_datum.bin
+-- Adding Example handFromJsonTest.bin
+-- Adding Example resizeTest.bin
+-- Download the models.
+-- Downloading BODY_25 model...
+-- Model already exists.
+-- Not downloading body (COCO) model
+-- Not downloading body (MPI) model
+-- Downloading face model...
+-- Model already exists.
+-- Downloading hand model...
+-- Model already exists.
+-- Models Downloaded.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/teja.dhondu/octopus/openpose/build
+[  0%] Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/hand/openpose_generated_renderHand.cu.o
+[  2%] Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/tracking/openpose_generated_pyramidalLK.cu.o
+[  3%] Built target openpose_lib
+[  3%] Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_nmsBase.cu.o
+[  4%] Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_maximumBase.cu.o
+[  4%] Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_resizeAndMergeBase.cu.o
+[  4%] Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/gpu/openpose_generated_cuda.cu.o
+[  4%] Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/net/openpose_generated_bodyPartConnectorBase.cu.o
+[  4%] Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/face/openpose_generated_renderFace.cu.o
+[  5%] Building NVCC (Device) object src/openpose/CMakeFiles/openpose.dir/pose/openpose_generated_renderPose.cu.o
+Scanning dependencies of target openpose
+[  5%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/datumProducer.cpp.o
+[  6%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/flirReader.cpp.o
+[  6%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/imageDirectoryReader.cpp.o
+[  8%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/defineTemplates.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/spinnakerWrapper.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/videoReader.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/videoCaptureReader.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/tracking/personIdExtractor.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/webcamReader.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/ipCameraReader.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/tracking/defineTemplates.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/tracking/personTracker.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/producer/producer.cpp.o
+[  9%] Building CXX object src/openpose/CMakeFiles/openpose.dir/tracking/pyramidalLK.cpp.o
+[ 11%] Building CXX object src/openpose/CMakeFiles/openpose.dir/3d/defineTemplates.cpp.o
+[ 11%] Building CXX object src/openpose/CMakeFiles/openpose.dir/3d/jointAngleEstimation.cpp.o
+[ 11%] Building CXX object src/openpose/CMakeFiles/openpose.dir/3d/poseTriangulationPrivate.cpp.o
+[ 11%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/array.cpp.o
+[ 11%] Building CXX object src/openpose/CMakeFiles/openpose.dir/3d/cameraParameterReader.cpp.o
+[ 11%] Building CXX object src/openpose/CMakeFiles/openpose.dir/3d/poseTriangulation.cpp.o
+[ 12%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/arrayCpuGpu.cpp.o
+[ 12%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/cvMatToOpInput.cpp.o
+[ 12%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/cvMatToOpOutput.cpp.o
+[ 12%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/datum.cpp.o
+[ 13%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/defineTemplates.cpp.o
+[ 13%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/gpuRenderer.cpp.o
+[ 13%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/keepTopNPeople.cpp.o
+[ 14%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/keypointScaler.cpp.o
+[ 14%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/matrix.cpp.o
+[ 15%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/opOutputToCvMat.cpp.o
+[ 15%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/point.cpp.o
+[ 15%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/rectangle.cpp.o
+[ 15%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/renderer.cpp.o
+[ 15%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/scaleAndSizeExtractor.cpp.o
+[ 16%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/verbosePrinter.cpp.o
+[ 16%] Building CXX object src/openpose/CMakeFiles/openpose.dir/core/string.cpp.o
+[ 17%] Building CXX object src/openpose/CMakeFiles/openpose.dir/calibration/cameraParameterEstimation.cpp.o
+[ 17%] Building CXX object src/openpose/CMakeFiles/openpose.dir/calibration/gridPatternFunctions.cpp.o
+[ 17%] Building CXX object src/openpose/CMakeFiles/openpose.dir/wrapper/defineTemplates.cpp.o
+[ 17%] Building CXX object src/openpose/CMakeFiles/openpose.dir/wrapper/wrapperAuxiliary.cpp.o
+[ 18%] Building CXX object src/openpose/CMakeFiles/openpose.dir/wrapper/wrapperStructExtra.cpp.o
+[ 18%] Building CXX object src/openpose/CMakeFiles/openpose.dir/wrapper/wrapperStructGui.cpp.o
+[ 18%] Building CXX object src/openpose/CMakeFiles/openpose.dir/wrapper/wrapperStructFace.cpp.o
+[ 19%] Building CXX object src/openpose/CMakeFiles/openpose.dir/wrapper/wrapperStructHand.cpp.o
+[ 19%] Building CXX object src/openpose/CMakeFiles/openpose.dir/wrapper/wrapperStructInput.cpp.o
+[ 19%] Building CXX object src/openpose/CMakeFiles/openpose.dir/wrapper/wrapperStructOutput.cpp.o
+[ 19%] Building CXX object src/openpose/CMakeFiles/openpose.dir/wrapper/wrapperStructPose.cpp.o
+[ 20%] Building CXX object src/openpose/CMakeFiles/openpose.dir/gpu/cuda.cpp.o
+[ 20%] Building CXX object src/openpose/CMakeFiles/openpose.dir/gpu/gpu.cpp.o
+[ 20%] Building CXX object src/openpose/CMakeFiles/openpose.dir/gpu/opencl.cpp.o
+[ 21%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/bvhSaver.cpp.o
+[ 21%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/cocoJsonSaver.cpp.o
+[ 21%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/defineTemplates.cpp.o
+[ 22%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/fileSaver.cpp.o
+[ 22%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/fileStream.cpp.o
+[ 22%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/heatMapSaver.cpp.o
+[ 23%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/imageSaver.cpp.o
+[ 23%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/jsonOfstream.cpp.o
+[ 23%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/keypointSaver.cpp.o
+[ 23%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/peopleJsonSaver.cpp.o
+[ 24%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/udpSender.cpp.o
+[ 24%] Building CXX object src/openpose/CMakeFiles/openpose.dir/filestream/videoSaver.cpp.o
+[ 24%] Building CXX object src/openpose/CMakeFiles/openpose.dir/thread/defineTemplates.cpp.o
+[ 24%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/bodyPartConnectorBaseCL.cpp.o
+[ 25%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/bodyPartConnectorCaffe.cpp.o
+[ 25%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/bodyPartConnectorBase.cpp.o
+[ 25%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/maximumBase.cpp.o
+[ 26%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/maximumCaffe.cpp.o
+[ 26%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/netCaffe.cpp.o
+[ 26%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/netOpenCv.cpp.o
+[ 27%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/nmsBase.cpp.o
+[ 27%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/nmsBaseCL.cpp.o
+[ 27%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/nmsCaffe.cpp.o
+[ 28%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/resizeAndMergeBase.cpp.o
+[ 28%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/resizeAndMergeBaseCL.cpp.o
+[ 28%] Building CXX object src/openpose/CMakeFiles/openpose.dir/net/resizeAndMergeCaffe.cpp.o
+[ 29%] Building CXX object src/openpose/CMakeFiles/openpose.dir/gui/defineTemplates.cpp.o
+[ 29%] Building CXX object src/openpose/CMakeFiles/openpose.dir/gui/frameDisplayer.cpp.o
+[ 29%] Building CXX object src/openpose/CMakeFiles/openpose.dir/gui/gui.cpp.o
+[ 29%] Building CXX object src/openpose/CMakeFiles/openpose.dir/gui/guiAdam.cpp.o
+[ 30%] Building CXX object src/openpose/CMakeFiles/openpose.dir/gui/gui3D.cpp.o
+[ 30%] Building CXX object src/openpose/CMakeFiles/openpose.dir/gui/guiInfoAdder.cpp.o
+[ 30%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/defineTemplates.cpp.o
+[ 31%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/poseExtractor.cpp.o
+[ 31%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/poseCpuRenderer.cpp.o
+[ 32%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/poseExtractorCaffe.cpp.o
+[ 32%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/poseExtractorNet.cpp.o
+[ 32%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/poseGpuRenderer.cpp.o
+[ 32%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/poseParameters.cpp.o
+[ 32%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/poseParametersRender.cpp.o
+[ 33%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/poseRenderer.cpp.o
+[ 33%] Building CXX object src/openpose/CMakeFiles/openpose.dir/pose/renderPose.cpp.o
+[ 33%] Building CXX object src/openpose/CMakeFiles/openpose.dir/face/defineTemplates.cpp.o
+[ 34%] Building CXX object src/openpose/CMakeFiles/openpose.dir/face/faceDetector.cpp.o
+[ 34%] Building CXX object src/openpose/CMakeFiles/openpose.dir/face/faceDetectorOpenCV.cpp.o
+[ 34%] Building CXX object src/openpose/CMakeFiles/openpose.dir/face/faceExtractorCaffe.cpp.o
+[ 35%] Building CXX object src/openpose/CMakeFiles/openpose.dir/face/faceExtractorNet.cpp.o
+[ 35%] Building CXX object src/openpose/CMakeFiles/openpose.dir/face/faceCpuRenderer.cpp.o
+[ 35%] Building CXX object src/openpose/CMakeFiles/openpose.dir/face/faceGpuRenderer.cpp.o
+[ 35%] Building CXX object src/openpose/CMakeFiles/openpose.dir/face/faceRenderer.cpp.o
+[ 36%] Building CXX object src/openpose/CMakeFiles/openpose.dir/face/renderFace.cpp.o
+[ 36%] Building CXX object src/openpose/CMakeFiles/openpose.dir/unity/unityBinding.cpp.o
+[ 36%] Building CXX object src/openpose/CMakeFiles/openpose.dir/utilities/errorAndLog.cpp.o
+[ 37%] Building CXX object src/openpose/CMakeFiles/openpose.dir/utilities/fileSystem.cpp.o
+[ 37%] Building CXX object src/openpose/CMakeFiles/openpose.dir/utilities/flagsToOpenPose.cpp.o
+[ 37%] Building CXX object src/openpose/CMakeFiles/openpose.dir/utilities/keypoint.cpp.o
+[ 38%] Building CXX object src/openpose/CMakeFiles/openpose.dir/utilities/openCv.cpp.o
+[ 38%] Building CXX object src/openpose/CMakeFiles/openpose.dir/utilities/openCvPrivate.cpp.o
+[ 38%] Building CXX object src/openpose/CMakeFiles/openpose.dir/utilities/profiler.cpp.o
+[ 39%] Building CXX object src/openpose/CMakeFiles/openpose.dir/utilities/string.cpp.o
+[ 39%] Building CXX object src/openpose/CMakeFiles/openpose.dir/hand/defineTemplates.cpp.o
+[ 39%] Building CXX object src/openpose/CMakeFiles/openpose.dir/hand/handDetector.cpp.o
+[ 39%] Building CXX object src/openpose/CMakeFiles/openpose.dir/hand/handDetectorFromTxt.cpp.o
+[ 40%] Building CXX object src/openpose/CMakeFiles/openpose.dir/hand/handExtractorCaffe.cpp.o
+[ 40%] Building CXX object src/openpose/CMakeFiles/openpose.dir/hand/handExtractorNet.cpp.o
+[ 40%] Building CXX object src/openpose/CMakeFiles/openpose.dir/hand/handCpuRenderer.cpp.o
+/home/teja.dhondu/octopus/openpose/src/openpose/utilities/fileSystem.cpp: In function ‘bool op::compareNat(const string&, const string&)’:
+/home/teja.dhondu/octopus/openpose/src/openpose/utilities/fileSystem.cpp:51:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (auto i = 0 ; i < aNumberAsString.size() ; ++i)
+                                 ^
+[ 41%] Building CXX object src/openpose/CMakeFiles/openpose.dir/hand/handGpuRenderer.cpp.o
+[ 41%] Building CXX object src/openpose/CMakeFiles/openpose.dir/hand/handRenderer.cpp.o
+[ 41%] Building CXX object src/openpose/CMakeFiles/openpose.dir/hand/renderHand.cpp.o
+[ 42%] Linking CXX shared library libopenpose.so
+[ 42%] Built target openpose
+Scanning dependencies of target openpose_core
+Scanning dependencies of target openpose.bin
+Scanning dependencies of target calibration.bin
+[ 42%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/array.cpp.o
+Scanning dependencies of target 06_face_from_image.bin
+Scanning dependencies of target 01_body_from_image_default.bin
+Scanning dependencies of target 03_keypoints_from_image.bin
+Scanning dependencies of target 05_keypoints_from_images_multi_gpu.bin
+Scanning dependencies of target 18_synchronous_custom_all_and_datum.bin
+Scanning dependencies of target 02_whole_body_from_image_default.bin
+Scanning dependencies of target 11_asynchronous_custom_input_multi_camera.bin
+Scanning dependencies of target 17_synchronous_custom_output.bin
+Scanning dependencies of target 13_asynchronous_custom_input_output_and_datum.bin
+Scanning dependencies of target 14_synchronous_custom_input.bin
+[ 43%] Building CXX object examples/openpose/CMakeFiles/openpose.bin.dir/openpose.cpp.o
+Scanning dependencies of target 07_hand_from_image.bin
+Scanning dependencies of target 04_keypoints_from_images.bin
+Scanning dependencies of target 16_synchronous_custom_postprocessing.bin
+[ 43%] Building CXX object examples/calibration/CMakeFiles/calibration.bin.dir/calibration.cpp.o
+Scanning dependencies of target 10_asynchronous_custom_input.bin
+Scanning dependencies of target 12_asynchronous_custom_output.bin
+Scanning dependencies of target 15_synchronous_custom_preprocessing.bin
+Scanning dependencies of target 1_custom_post_processing.bin
+[ 43%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/03_keypoints_from_image.bin.dir/03_keypoints_from_image.cpp.o
+[ 43%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/06_face_from_image.bin.dir/06_face_from_image.cpp.o
+[ 43%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/11_asynchronous_custom_input_multi_camera.bin.dir/11_asynchronous_custom_input_multi_camera.cpp.o
+[ 45%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/02_whole_body_from_image_default.bin.dir/02_whole_body_from_image_default.cpp.o
+[ 45%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/13_asynchronous_custom_input_output_and_datum.bin.dir/13_asynchronous_custom_input_output_and_datum.cpp.o
+[ 45%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/05_keypoints_from_images_multi_gpu.bin.dir/05_keypoints_from_images_multi_gpu.cpp.o
+[ 45%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/04_keypoints_from_images.bin.dir/04_keypoints_from_images.cpp.o
+[ 45%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/17_synchronous_custom_output.bin.dir/17_synchronous_custom_output.cpp.o
+[ 45%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/18_synchronous_custom_all_and_datum.bin.dir/18_synchronous_custom_all_and_datum.cpp.o
+[ 45%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/12_asynchronous_custom_output.bin.dir/12_asynchronous_custom_output.cpp.o
+[ 45%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/07_hand_from_image.bin.dir/07_hand_from_image.cpp.o
+[ 46%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/16_synchronous_custom_postprocessing.bin.dir/16_synchronous_custom_postprocessing.cpp.o
+[ 46%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/10_asynchronous_custom_input.bin.dir/10_asynchronous_custom_input.cpp.o
+[ 46%] Building CXX object examples/tutorial_add_module/CMakeFiles/1_custom_post_processing.bin.dir/1_custom_post_processing.cpp.o
+[ 46%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/01_body_from_image_default.bin.dir/01_body_from_image_default.cpp.o
+[ 47%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/15_synchronous_custom_preprocessing.bin.dir/15_synchronous_custom_preprocessing.cpp.o
+[ 47%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/14_synchronous_custom_input.bin.dir/14_synchronous_custom_input.cpp.o
+[ 47%] Linking CXX executable openpose.bin
+[ 47%] Linking CXX executable calibration.bin
+[ 47%] Linking CXX executable 01_body_from_image_default.bin
+[ 48%] Linking CXX executable 02_whole_body_from_image_default.bin
+[ 48%] Built target openpose.bin
+[ 48%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/arrayCpuGpu.cpp.o
+[ 48%] Built target calibration.bin
+Scanning dependencies of target 09_keypoints_from_heatmaps.bin
+[ 49%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/09_keypoints_from_heatmaps.bin.dir/09_keypoints_from_heatmaps.cpp.o
+[ 49%] Linking CXX executable 03_keypoints_from_image.bin
+[ 49%] Linking CXX executable 16_synchronous_custom_postprocessing.bin
+[ 49%] Built target 01_body_from_image_default.bin
+[ 49%] Linking CXX executable 06_face_from_image.bin
+[ 50%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/cvMatToOpInput.cpp.o
+[ 50%] Built target 02_whole_body_from_image_default.bin
+[ 51%] Linking CXX executable 05_keypoints_from_images_multi_gpu.bin
+Scanning dependencies of target 08_heatmaps_from_image.bin
+[ 51%] Building CXX object examples/tutorial_api_cpp/CMakeFiles/08_heatmaps_from_image.bin.dir/08_heatmaps_from_image.cpp.o
+[ 52%] Linking CXX executable 15_synchronous_custom_preprocessing.bin
+[ 52%] Linking CXX executable 14_synchronous_custom_input.bin
+[ 52%] Linking CXX executable 11_asynchronous_custom_input_multi_camera.bin
+[ 53%] Linking CXX executable 10_asynchronous_custom_input.bin
+[ 53%] Linking CXX executable 04_keypoints_from_images.bin
+[ 53%] Built target 03_keypoints_from_image.bin
+Scanning dependencies of target 2_thread_user_input_processing_output_and_datum.bin
+[ 54%] Building CXX object examples/tutorial_api_thread/CMakeFiles/2_thread_user_input_processing_output_and_datum.bin.dir/2_thread_user_input_processing_output_and_datum.cpp.o
+[ 54%] Linking CXX executable 07_hand_from_image.bin
+[ 55%] Linking CXX executable 12_asynchronous_custom_output.bin
+[ 55%] Built target 06_face_from_image.bin
+[ 55%] Built target 16_synchronous_custom_postprocessing.bin
+[ 55%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/datum.cpp.o
+[ 55%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/cvMatToOpOutput.cpp.o
+[ 55%] Built target 05_keypoints_from_images_multi_gpu.bin
+[ 55%] Built target 11_asynchronous_custom_input_multi_camera.bin
+Scanning dependencies of target 1_thread_user_processing_function.bin
+[ 55%] Built target 14_synchronous_custom_input.bin
+[ 55%] Building CXX object examples/tutorial_api_thread/CMakeFiles/1_thread_user_processing_function.bin.dir/1_thread_user_processing_function.cpp.o
+[ 56%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/defineTemplates.cpp.o
+[ 56%] Built target 15_synchronous_custom_preprocessing.bin
+Scanning dependencies of target resizeTest.bin
+[ 56%] Built target 04_keypoints_from_images.bin
+[ 56%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/gpuRenderer.cpp.o
+[ 56%] Linking CXX executable 17_synchronous_custom_output.bin
+[ 56%] Building CXX object examples/tests/CMakeFiles/resizeTest.bin.dir/resizeTest.cpp.o
+Scanning dependencies of target handFromJsonTest.bin
+[ 56%] Built target 10_asynchronous_custom_input.bin
+[ 56%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/keepTopNPeople.cpp.o
+[ 56%] Building CXX object examples/tests/CMakeFiles/handFromJsonTest.bin.dir/handFromJsonTest.cpp.o
+[ 56%] Built target 07_hand_from_image.bin
+[ 57%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/keypointScaler.cpp.o
+[ 57%] Built target 12_asynchronous_custom_output.bin
+[ 57%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/matrix.cpp.o
+[ 57%] Built target 17_synchronous_custom_output.bin
+[ 57%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/opOutputToCvMat.cpp.o
+[ 58%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/point.cpp.o
+[ 58%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/rectangle.cpp.o
+[ 58%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/renderer.cpp.o
+[ 58%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/scaleAndSizeExtractor.cpp.o
+[ 59%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/string.cpp.o
+[ 59%] Building CXX object src/openpose/core/CMakeFiles/openpose_core.dir/verbosePrinter.cpp.o
+[ 59%] Linking CXX executable 09_keypoints_from_heatmaps.bin
+[ 59%] Linking CXX executable 08_heatmaps_from_image.bin
+[ 59%] Built target 09_keypoints_from_heatmaps.bin
+[ 60%] Linking CXX executable 1_thread_user_processing_function.bin
+[ 60%] Built target 08_heatmaps_from_image.bin
+[ 61%] Linking CXX executable resizeTest.bin
+[ 61%] Built target 1_thread_user_processing_function.bin
+[ 61%] Built target resizeTest.bin
+[ 61%] Linking CXX executable 2_thread_user_input_processing_output_and_datum.bin
+[ 61%] Built target 2_thread_user_input_processing_output_and_datum.bin
+[ 61%] Linking CXX executable handFromJsonTest.bin
+[ 61%] Built target handFromJsonTest.bin
+[ 61%] Linking CXX shared library libopenpose_core.so
+[ 61%] Built target openpose_core
+[ 62%] Building NVCC (Device) object src/openpose/hand/CMakeFiles/openpose_hand.dir/openpose_hand_generated_renderHand.cu.o
+[ 62%] Building NVCC (Device) object src/openpose/net/CMakeFiles/openpose_net.dir/openpose_net_generated_resizeAndMergeBase.cu.o
+[ 63%] Building NVCC (Device) object src/openpose/net/CMakeFiles/openpose_net.dir/openpose_net_generated_nmsBase.cu.o
+[ 63%] Building NVCC (Device) object src/openpose/face/CMakeFiles/openpose_face.dir/openpose_face_generated_renderFace.cu.o
+[ 63%] Building NVCC (Device) object src/openpose/gpu/CMakeFiles/openpose_gpu.dir/openpose_gpu_generated_cuda.cu.o
+[ 63%] Building NVCC (Device) object src/openpose/net/CMakeFiles/openpose_net.dir/openpose_net_generated_bodyPartConnectorBase.cu.o
+[ 65%] Building NVCC (Device) object src/openpose/net/CMakeFiles/openpose_net.dir/openpose_net_generated_maximumBase.cu.o
+[ 65%] Building NVCC (Device) object src/openpose/pose/CMakeFiles/openpose_pose.dir/openpose_pose_generated_renderPose.cu.o
+Scanning dependencies of target openpose_calibration
+Scanning dependencies of target openpose_thread
+Scanning dependencies of target openpose_tracking
+Scanning dependencies of target openpose_3d
+Scanning dependencies of target openpose_filestream
+[ 66%] Building CXX object src/openpose/calibration/CMakeFiles/openpose_calibration.dir/cameraParameterEstimation.cpp.o
+[ 66%] Building CXX object src/openpose/calibration/CMakeFiles/openpose_calibration.dir/gridPatternFunctions.cpp.o
+[ 67%] Building CXX object src/openpose/thread/CMakeFiles/openpose_thread.dir/defineTemplates.cpp.o
+[ 67%] Building CXX object src/openpose/3d/CMakeFiles/openpose_3d.dir/cameraParameterReader.cpp.o
+[ 67%] Building CXX object src/openpose/tracking/CMakeFiles/openpose_tracking.dir/defineTemplates.cpp.o
+[ 68%] Building CXX object src/openpose/3d/CMakeFiles/openpose_3d.dir/jointAngleEstimation.cpp.o
+[ 68%] Building CXX object src/openpose/tracking/CMakeFiles/openpose_tracking.dir/personIdExtractor.cpp.o
+[ 69%] Building CXX object src/openpose/3d/CMakeFiles/openpose_3d.dir/defineTemplates.cpp.o
+[ 69%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/bvhSaver.cpp.o
+[ 69%] Building CXX object src/openpose/tracking/CMakeFiles/openpose_tracking.dir/personTracker.cpp.o
+[ 69%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/cocoJsonSaver.cpp.o
+[ 69%] Building CXX object src/openpose/tracking/CMakeFiles/openpose_tracking.dir/pyramidalLK.cpp.o
+[ 69%] Building CXX object src/openpose/3d/CMakeFiles/openpose_3d.dir/poseTriangulation.cpp.o
+[ 70%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/defineTemplates.cpp.o
+[ 70%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/fileSaver.cpp.o
+[ 70%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/fileStream.cpp.o
+Scanning dependencies of target openpose_gpu
+[ 70%] Building CXX object src/openpose/gpu/CMakeFiles/openpose_gpu.dir/cuda.cpp.o
+[ 70%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/heatMapSaver.cpp.o
+[ 71%] Linking CXX shared library libopenpose_tracking.so
+Scanning dependencies of target openpose_hand
+[ 72%] Building CXX object src/openpose/gpu/CMakeFiles/openpose_gpu.dir/gpu.cpp.o
+[ 73%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/imageSaver.cpp.o
+[ 73%] Building CXX object src/openpose/hand/CMakeFiles/openpose_hand.dir/defineTemplates.cpp.o
+Scanning dependencies of target openpose_face
+[ 73%] Building CXX object src/openpose/face/CMakeFiles/openpose_face.dir/defineTemplates.cpp.o
+[ 73%] Built target openpose_tracking
+[ 73%] Building CXX object src/openpose/face/CMakeFiles/openpose_face.dir/faceDetector.cpp.o
+[ 74%] Building CXX object src/openpose/face/CMakeFiles/openpose_face.dir/faceDetectorOpenCV.cpp.o
+[ 74%] Building CXX object src/openpose/gpu/CMakeFiles/openpose_gpu.dir/opencl.cpp.o
+[ 75%] Building CXX object src/openpose/3d/CMakeFiles/openpose_3d.dir/poseTriangulationPrivate.cpp.o
+[ 75%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/jsonOfstream.cpp.o
+[ 75%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/keypointSaver.cpp.o
+[ 76%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/peopleJsonSaver.cpp.o
+[ 76%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/udpSender.cpp.o
+[ 76%] Building CXX object src/openpose/filestream/CMakeFiles/openpose_filestream.dir/videoSaver.cpp.o
+[ 76%] Building CXX object src/openpose/face/CMakeFiles/openpose_face.dir/faceExtractorCaffe.cpp.o
+[ 76%] Linking CXX shared library libopenpose_calibration.so
+[ 76%] Building CXX object src/openpose/face/CMakeFiles/openpose_face.dir/faceExtractorNet.cpp.o
+[ 76%] Linking CXX shared library libopenpose_gpu.so
+[ 76%] Building CXX object src/openpose/face/CMakeFiles/openpose_face.dir/faceCpuRenderer.cpp.o
+[ 76%] Linking CXX shared library libopenpose_thread.so
+[ 77%] Building CXX object src/openpose/hand/CMakeFiles/openpose_hand.dir/handDetector.cpp.o
+[ 77%] Building CXX object src/openpose/face/CMakeFiles/openpose_face.dir/faceGpuRenderer.cpp.o
+[ 77%] Built target openpose_calibration
+[ 77%] Building CXX object src/openpose/hand/CMakeFiles/openpose_hand.dir/handDetectorFromTxt.cpp.o
+[ 77%] Building CXX object src/openpose/face/CMakeFiles/openpose_face.dir/faceRenderer.cpp.o
+[ 77%] Built target openpose_gpu
+[ 78%] Building CXX object src/openpose/face/CMakeFiles/openpose_face.dir/renderFace.cpp.o
+[ 78%] Building CXX object src/openpose/hand/CMakeFiles/openpose_hand.dir/handExtractorCaffe.cpp.o
+[ 78%] Built target openpose_thread
+[ 78%] Building CXX object src/openpose/hand/CMakeFiles/openpose_hand.dir/handExtractorNet.cpp.o
+Scanning dependencies of target openpose_pose
+[ 78%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/defineTemplates.cpp.o
+[ 78%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/poseCpuRenderer.cpp.o
+[ 79%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/poseExtractor.cpp.o
+[ 79%] Building CXX object src/openpose/hand/CMakeFiles/openpose_hand.dir/handCpuRenderer.cpp.o
+[ 80%] Building CXX object src/openpose/hand/CMakeFiles/openpose_hand.dir/handGpuRenderer.cpp.o
+[ 80%] Building CXX object src/openpose/hand/CMakeFiles/openpose_hand.dir/handRenderer.cpp.o
+[ 80%] Building CXX object src/openpose/hand/CMakeFiles/openpose_hand.dir/renderHand.cpp.o
+[ 80%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/poseExtractorCaffe.cpp.o
+[ 80%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/poseExtractorNet.cpp.o
+[ 81%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/poseGpuRenderer.cpp.o
+[ 81%] Linking CXX executable 13_asynchronous_custom_input_output_and_datum.bin
+[ 81%] Linking CXX shared library libopenpose_3d.so
+[ 81%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/poseParameters.cpp.o
+[ 81%] Linking CXX executable 1_custom_post_processing.bin
+[ 81%] Built target openpose_3d
+[ 81%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/poseParametersRender.cpp.o
+[ 81%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/poseRenderer.cpp.o
+[ 82%] Building CXX object src/openpose/pose/CMakeFiles/openpose_pose.dir/renderPose.cpp.o
+[ 82%] Linking CXX executable 18_synchronous_custom_all_and_datum.bin
+[ 83%] Linking CXX shared library libopenpose_filestream.so
+[ 83%] Built target 13_asynchronous_custom_input_output_and_datum.bin
+[ 83%] Built target openpose_filestream
+Scanning dependencies of target openpose_producer
+[ 83%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/datumProducer.cpp.o
+[ 84%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/flirReader.cpp.o
+[ 84%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/defineTemplates.cpp.o
+[ 84%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/producer.cpp.o
+[ 84%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/imageDirectoryReader.cpp.o
+[ 84%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/spinnakerWrapper.cpp.o
+[ 85%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/ipCameraReader.cpp.o
+[ 85%] Built target 1_custom_post_processing.bin
+[ 86%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/videoCaptureReader.cpp.o
+[ 86%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/videoReader.cpp.o
+[ 86%] Building CXX object src/openpose/producer/CMakeFiles/openpose_producer.dir/webcamReader.cpp.o
+[ 86%] Built target 18_synchronous_custom_all_and_datum.bin
+[ 87%] Linking CXX shared library libopenpose_face.so
+[ 87%] Built target openpose_face
+[ 88%] Linking CXX shared library libopenpose_hand.so
+[ 88%] Built target openpose_hand
+[ 88%] Linking CXX shared library libopenpose_pose.so
+[ 88%] Built target openpose_pose
+Scanning dependencies of target openpose_gui
+Scanning dependencies of target openpose_unity
+[ 88%] Building CXX object src/openpose/gui/CMakeFiles/openpose_gui.dir/defineTemplates.cpp.o
+[ 89%] Building CXX object src/openpose/gui/CMakeFiles/openpose_gui.dir/frameDisplayer.cpp.o
+[ 89%] Building CXX object src/openpose/gui/CMakeFiles/openpose_gui.dir/guiAdam.cpp.o
+[ 89%] Building CXX object src/openpose/gui/CMakeFiles/openpose_gui.dir/gui.cpp.o
+[ 90%] Building CXX object src/openpose/gui/CMakeFiles/openpose_gui.dir/gui3D.cpp.o
+[ 90%] Building CXX object src/openpose/gui/CMakeFiles/openpose_gui.dir/guiInfoAdder.cpp.o
+[ 90%] Building CXX object src/openpose/unity/CMakeFiles/openpose_unity.dir/unityBinding.cpp.o
+[ 90%] Linking CXX shared library libopenpose_unity.so
+[ 90%] Built target openpose_unity
+[ 90%] Linking CXX shared library libopenpose_producer.so
+[ 90%] Built target openpose_producer
+Scanning dependencies of target openpose_utilities
+[ 91%] Building CXX object src/openpose/utilities/CMakeFiles/openpose_utilities.dir/errorAndLog.cpp.o
+[ 91%] Building CXX object src/openpose/utilities/CMakeFiles/openpose_utilities.dir/fileSystem.cpp.o
+[ 91%] Building CXX object src/openpose/utilities/CMakeFiles/openpose_utilities.dir/flagsToOpenPose.cpp.o
+[ 92%] Building CXX object src/openpose/utilities/CMakeFiles/openpose_utilities.dir/string.cpp.o
+[ 92%] Building CXX object src/openpose/utilities/CMakeFiles/openpose_utilities.dir/profiler.cpp.o
+[ 92%] Building CXX object src/openpose/utilities/CMakeFiles/openpose_utilities.dir/keypoint.cpp.o
+[ 93%] Building CXX object src/openpose/utilities/CMakeFiles/openpose_utilities.dir/openCvPrivate.cpp.o
+[ 93%] Building CXX object src/openpose/utilities/CMakeFiles/openpose_utilities.dir/openCv.cpp.o
+/home/teja.dhondu/octopus/openpose/src/openpose/utilities/fileSystem.cpp: In function ‘bool op::compareNat(const string&, const string&)’:
+/home/teja.dhondu/octopus/openpose/src/openpose/utilities/fileSystem.cpp:51:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (auto i = 0 ; i < aNumberAsString.size() ; ++i)
+                                 ^
+Scanning dependencies of target openpose_net
+[ 93%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/netCaffe.cpp.o
+[ 94%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/bodyPartConnectorBase.cpp.o
+[ 94%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/bodyPartConnectorCaffe.cpp.o
+[ 95%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/maximumBase.cpp.o
+[ 95%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/bodyPartConnectorBaseCL.cpp.o
+[ 95%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/maximumCaffe.cpp.o
+[ 95%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/netOpenCv.cpp.o
+[ 95%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/nmsBaseCL.cpp.o
+[ 95%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/resizeAndMergeBaseCL.cpp.o
+[ 96%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/nmsCaffe.cpp.o
+[ 96%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/nmsBase.cpp.o
+[ 97%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/resizeAndMergeBase.cpp.o
+[ 97%] Building CXX object src/openpose/net/CMakeFiles/openpose_net.dir/resizeAndMergeCaffe.cpp.o
+[ 97%] Linking CXX shared library libopenpose_gui.so
+[ 97%] Built target openpose_gui
+[ 97%] Linking CXX shared library libopenpose_utilities.so
+[ 97%] Built target openpose_utilities
+Scanning dependencies of target openpose_wrapper
+[ 98%] Building CXX object src/openpose/wrapper/CMakeFiles/openpose_wrapper.dir/defineTemplates.cpp.o
+[ 98%] Building CXX object src/openpose/wrapper/CMakeFiles/openpose_wrapper.dir/wrapperStructOutput.cpp.o
+[ 98%] Building CXX object src/openpose/wrapper/CMakeFiles/openpose_wrapper.dir/wrapperStructFace.cpp.o
+[ 98%] Building CXX object src/openpose/wrapper/CMakeFiles/openpose_wrapper.dir/wrapperAuxiliary.cpp.o
+[ 98%] Building CXX object src/openpose/wrapper/CMakeFiles/openpose_wrapper.dir/wrapperStructExtra.cpp.o
+[ 98%] Building CXX object src/openpose/wrapper/CMakeFiles/openpose_wrapper.dir/wrapperStructInput.cpp.o
+[ 99%] Building CXX object src/openpose/wrapper/CMakeFiles/openpose_wrapper.dir/wrapperStructHand.cpp.o
+[100%] Building CXX object src/openpose/wrapper/CMakeFiles/openpose_wrapper.dir/wrapperStructPose.cpp.o
+[100%] Building CXX object src/openpose/wrapper/CMakeFiles/openpose_wrapper.dir/wrapperStructGui.cpp.o
+[100%] Linking CXX shared library libopenpose_net.so
+[100%] Built target openpose_net
+[100%] Linking CXX shared library libopenpose_wrapper.so
+[100%] Built target openpose_wrapper
+Built target openpose_lib
+Starting OpenPose demo...
+Configuring OpenPose...
+Starting thread(s)...
+Auto-detecting all available GPUs... Detected 2 GPU(s), using 2 of them starting at GPU 0.
+OpenPose demo successfully finished. Total time: 5.959653 seconds.
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From /home/teja.dhondu/octopus/CIHP_PGN/utils/image_reader.py:31: slice_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(tuple(tensor_list)).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/training/input.py:374: range_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.range(limit).shuffle(limit).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/training/input.py:320: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/training/input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/training/input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/training/input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/teja.dhondu/octopus/CIHP_PGN/utils/image_reader.py:17: The name tf.read_file is deprecated. Please use tf.io.read_file instead.
+
+WARNING:tensorflow:From test_pgn.py:36: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From test_pgn.py:37: The name tf.image.resize_images is deprecated. Please use tf.image.resize instead.
+
+WARNING:tensorflow:From test_pgn.py:37: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From test_pgn.py:44: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/octopus/CIHP_PGN/kaffe/tensorflow/network.py:45: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/octopus/CIHP_PGN/kaffe/tensorflow/network.py:104: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/octopus/CIHP_PGN/kaffe/tensorflow/network.py:205: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/octopus/CIHP_PGN/kaffe/tensorflow/network.py:295: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/teja.dhondu/octopus/CIHP_PGN/kaffe/tensorflow/network.py:302: The name tf.image.resize_bilinear is deprecated. Please use tf.compat.v1.image.resize_bilinear instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/octopus/CIHP_PGN/kaffe/tensorflow/network.py:283: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/util/dispatch.py:180: calling expand_dims (from tensorflow.python.ops.array_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+WARNING:tensorflow:From test_pgn.py:114: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-10-13 11:32:36.743804: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-10-13 11:32:36.774689: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2399920000 Hz
+2020-10-13 11:32:36.775876: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55cec9088d80 executing computations on platform Host. Devices:
+2020-10-13 11:32:36.775900: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-10-13 11:32:36.777943: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-10-13 11:32:37.945012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:02:00.0
+2020-10-13 11:32:37.952334: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2020-10-13 11:32:38.262338: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2020-10-13 11:32:38.681432: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10
+2020-10-13 11:32:39.296470: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10
+2020-10-13 11:32:39.605476: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10
+2020-10-13 11:32:39.882772: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10
+2020-10-13 11:32:40.554098: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-10-13 11:32:40.555837: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-10-13 11:32:40.555939: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2020-10-13 11:32:40.644726: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-13 11:32:40.644769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-10-13 11:32:40.644776: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-10-13 11:32:40.647022: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10481 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2020-10-13 11:32:40.649247: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55cec9bc26a0 executing computations on platform CUDA. Devices:
+2020-10-13 11:32:40.649264: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+WARNING:tensorflow:From test_pgn.py:123: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+WARNING:tensorflow:From test_pgn.py:131: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+2020-10-13 11:33:07.359319: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2020-10-13 11:33:07.756171: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-10-13 11:33:15.019798: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.06GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-13 11:33:19.913867: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.21GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-13 11:33:21.336322: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.88GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-13 11:33:21.426753: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.86GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-13 11:33:22.044118: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.86GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-13 11:33:22.377590: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.15GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-13 11:33:22.562482: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.89GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-13 11:33:22.705353: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.15GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-13 11:33:22.882580: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.15GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-13 11:33:22.882658: W tensorflow/core/common_runtime/bfc_allocator.cc:237] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+Restored model parameters from model.ckpt-593292
+ [*] Load SUCCESS
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Using TensorFlow backend.
+WARNING:tensorflow:From infer_single.py:20: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From infer_single.py:20: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From infer_single.py:20: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+2020-10-13 11:34:57.545929: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-10-13 11:34:57.570659: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2399920000 Hz
+2020-10-13 11:34:57.571792: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5639594f1b40 executing computations on platform Host. Devices:
+2020-10-13 11:34:57.571816: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-10-13 11:34:57.572765: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-10-13 11:34:58.726173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:02:00.0
+2020-10-13 11:34:58.727004: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:83:00.0
+2020-10-13 11:34:58.727996: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2020-10-13 11:34:58.731073: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2020-10-13 11:34:58.733098: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10
+2020-10-13 11:34:58.733997: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10
+2020-10-13 11:34:58.736126: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10
+2020-10-13 11:34:58.737394: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10
+2020-10-13 11:34:58.741329: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-10-13 11:34:58.747946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0, 1
+2020-10-13 11:34:58.747994: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2020-10-13 11:34:58.750056: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-13 11:34:58.750071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 1 
+2020-10-13 11:34:58.750078: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N N 
+2020-10-13 11:34:58.750083: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 1:   N N 
+2020-10-13 11:34:58.753169: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10481 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2020-10-13 11:34:58.755019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10481 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+2020-10-13 11:34:58.757136: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56395a542590 executing computations on platform CUDA. Devices:
+2020-10-13 11:34:58.757153: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+2020-10-13 11:34:58.757159: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (1): GeForce GTX 1080 Ti, Compute Capability 6.1
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/octopus/smpl/batch_lbs.py:83: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/dirt/matrices.py:41: calling norm (from tensorflow.python.ops.linalg_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+  0%|          | 0/5 [00:00<?, ?it/s]2020-10-13 11:35:39.350035: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2020-10-13 11:35:40.072701: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2020-10-13 11:35:40.726884: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-10-13 11:35:41.419877: I tensorflow/core/kernels/cuda_solvers.cc:159] Creating CudaSolver handles for stream 0x56395a4cb5f0
+2020-10-13 11:35:41.420023: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10
+2020-10-13 11:35:42.994682: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+ 20%|██        | 1/5 [00:26<01:45, 26.44s/it] 40%|████      | 2/5 [00:26<00:55, 18.56s/it] 60%|██████    | 3/5 [00:26<00:26, 13.04s/it] 80%|████████  | 4/5 [00:26<00:09,  9.17s/it]100%|██████████| 5/5 [00:27<00:00,  6.47s/it]100%|██████████| 5/5 [00:27<00:00,  5.41s/it]
+  0%|          | 0/15 [00:00<?, ?it/s]WARNING:tensorflow:From /home/teja.dhondu/anaconda3/envs/smpl/lib/python3.7/site-packages/tensorflow/python/ops/math_grad.py:1205: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+  7%|▋         | 1/15 [00:25<05:53, 25.22s/it]2020-10-13 11:36:41.893619: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-10-13 11:36:41.899001: I /tmp/pip-req-build-hnopg98v/csrc/gl_common.h:66] selected egl device #0 to match cuda device #0 for thread 0x1462cc2cb700
+2020-10-13 11:36:42.021042: I /tmp/pip-req-build-hnopg98v/csrc/gl_common.h:84] successfully created new GL context on thread 0x1462cc2cb700 (EGL = 1.5, GL = 4.6.0 NVIDIA 440.95.01, renderer = GeForce GTX 1080 Ti/PCIe/SSE2)
+2020-10-13 11:36:42.182714: I /tmp/pip-req-build-hnopg98v/csrc/rasterise_egl.cpp:266] reinitialised framebuffer with size 1080 x 1080
+2020-10-13 11:36:42.196428: I /tmp/pip-req-build-hnopg98v/csrc/gl_common.h:66] selected egl device #0 to match cuda device #0 for thread 0x1462cb6d6700
+2020-10-13 11:36:42.210185: I /tmp/pip-req-build-hnopg98v/csrc/gl_common.h:84] successfully created new GL context on thread 0x1462cb6d6700 (EGL = 1.5, GL = 4.6.0 NVIDIA 440.95.01, renderer = GeForce GTX 1080 Ti/PCIe/SSE2)
+2020-10-13 11:36:42.211838: I /tmp/pip-req-build-hnopg98v/csrc/rasterise_grad_egl.cpp:314] reinitialised framebuffer with size 1080 x 1080
+ 13%|█▎        | 2/15 [00:57<05:56, 27.39s/it] 20%|██        | 3/15 [00:57<03:51, 19.26s/it] 27%|██▋       | 4/15 [00:58<02:29, 13.56s/it] 33%|███▎      | 5/15 [00:58<01:35,  9.57s/it] 40%|████      | 6/15 [00:58<01:01,  6.78s/it] 47%|████▋     | 7/15 [00:59<00:38,  4.83s/it] 53%|█████▎    | 8/15 [00:59<00:24,  3.46s/it] 60%|██████    | 9/15 [00:59<00:15,  2.51s/it] 67%|██████▋   | 10/15 [00:59<00:09,  1.84s/it] 73%|███████▎  | 11/15 [01:00<00:05,  1.37s/it] 80%|████████  | 12/15 [01:00<00:03,  1.04s/it] 87%|████████▋ | 13/15 [01:00<00:01,  1.23it/s] 93%|█████████▎| 14/15 [01:00<00:00,  1.54it/s]100%|██████████| 15/15 [01:01<00:00,  1.85it/s]100%|██████████| 15/15 [01:01<00:00,  4.10s/it]
+Optimizing for pose...
+Optimizing for shape...
+Estimating shape...
+Done.
+0it [00:00, ?it/s]1it [00:04,  4.26s/it]2it [00:07,  3.93s/it]3it [00:10,  3.63s/it]4it [00:13,  3.45s/it]5it [00:16,  3.41s/it]6it [00:19,  3.36s/it]7it [00:23,  3.29s/it]8it [00:26,  3.25s/it]8it [00:26,  3.28s/it]
+extract from 0000_unwrap.jpg...
+extract from 0001_unwrap.jpg...
+extract from 0002_unwrap.jpg...
+extract from 0003_unwrap.jpg...
+extract from 0004_unwrap.jpg...
+extract from 0005_unwrap.jpg...
+extract from 0006_unwrap.jpg...
+extract from 0007_unwrap.jpg...
+GMM fit Hair...
+GMM fit Face...
+GMM fit UpperClothes...
+GMM fit Pants...
+GMM fit Torso-skin...
+GMM fit Arms...
+GMM fit Legs...
+  0%|          | 0/15 [00:00<?, ?it/s]/home/teja.dhondu/octopus/semantic_human_texture_stitching/tex/texture.py:86: UserWarning: DEPRECATED: skimage.measure.compare_ssim has been moved to skimage.metrics.structural_similarity. It will be removed from skimage.measure in version 0.18.
+  full=True, data_range=1)
+  7%|▋         | 1/15 [00:03<00:45,  3.25s/it] 13%|█▎        | 2/15 [00:06<00:40,  3.11s/it] 20%|██        | 3/15 [00:08<00:36,  3.02s/it] 27%|██▋       | 4/15 [00:11<00:30,  2.81s/it] 33%|███▎      | 5/15 [00:13<00:26,  2.63s/it] 40%|████      | 6/15 [00:15<00:23,  2.56s/it] 47%|████▋     | 7/15 [00:18<00:21,  2.70s/it] 53%|█████▎    | 8/15 [00:21<00:18,  2.59s/it] 60%|██████    | 9/15 [00:23<00:15,  2.50s/it] 67%|██████▋   | 10/15 [00:25<00:12,  2.43s/it] 73%|███████▎  | 11/15 [00:27<00:09,  2.35s/it] 80%|████████  | 12/15 [00:30<00:07,  2.34s/it] 87%|████████▋ | 13/15 [00:33<00:04,  2.50s/it] 93%|█████████▎| 14/15 [00:35<00:02,  2.40s/it]100%|██████████| 15/15 [00:49<00:00,  5.84s/it]100%|██████████| 15/15 [00:49<00:00,  3.27s/it]
+reading file 0000_unwrap.jpg...
+reading file 0001_unwrap.jpg...
+reading file 0002_unwrap.jpg...
+reading file 0003_unwrap.jpg...
+reading file 0004_unwrap.jpg...
+reading file 0005_unwrap.jpg...
+reading file 0006_unwrap.jpg...
+reading file 0007_unwrap.jpg...
+saving sample_texture.png...
