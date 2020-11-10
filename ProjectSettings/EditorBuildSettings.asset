@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/VirtualMeetingRoom/Scenes/NetworkUI.unity
+    guid: 625a1068d130a4fa3adf11457ef492f5
+  - enabled: 1
+    path: Assets/VirtualMeetingRoom/Scenes/MainScene-Network.unity
+    guid: 35818af8ca63642689315f29dc35e6cc
   m_configObjects: {}

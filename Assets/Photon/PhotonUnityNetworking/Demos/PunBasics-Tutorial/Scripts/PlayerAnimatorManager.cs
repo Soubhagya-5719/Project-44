@@ -20,6 +20,8 @@ namespace Photon.Pun.Demo.PunBasics
 	    private float directionDampTime = 0.25f;
         Animator animator;
 
+		[SerializeField]
+		private GameObject cameraRig;
 		#endregion
 
 		#region MonoBehaviour CallBacks
@@ -30,6 +32,7 @@ namespace Photon.Pun.Demo.PunBasics
 	    void Start () 
 	    {
 	        animator = GetComponent<Animator>();
+			cameraRig.SetActive(false);
 	    }
 	        
 		/// <summary>
@@ -43,6 +46,9 @@ namespace Photon.Pun.Demo.PunBasics
 	        {
 	            return;
 	        }
+			// Enable the animator if isMine
+			cameraRig.SetActive(true);
+			animator.enabled = true;
 
 			// failSafe is missing Animator component on GameObject
 	        if (!animator)
