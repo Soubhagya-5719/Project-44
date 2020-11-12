@@ -40,6 +40,10 @@ namespace Photon.Pun.Demo.PunBasics
         [SerializeField]
         private GameObject playerPrefab;
 
+		[SerializeField]
+        private GameObject playerPrefabTwo;
+
+
 
         #endregion
 
@@ -75,7 +79,7 @@ namespace Photon.Pun.Demo.PunBasics
 						PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(-2f,5f,20f), Quaternion.Euler(0,180,0), 0);
 					}
 					else if(PhotonNetwork.CurrentRoom.PlayerCount == 2) {
-						PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
+						PhotonNetwork.Instantiate(this.playerPrefabTwo.name, new Vector3(0f,5f,0f), Quaternion.identity, 0);
 					}
 				}else{
 
